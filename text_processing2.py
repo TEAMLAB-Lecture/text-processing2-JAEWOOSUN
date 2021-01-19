@@ -70,7 +70,7 @@ def to_camel_case(underscore_str):
     camelcase_str = []
     camelcase_list = underscore_str.split('_')
     flag = False
-    if len(camelcase_list) == 1 and camelcase_list[0][0] != '_':
+    if len(camelcase_list) == 1 and camelcase_list[0] != '':
         return camelcase_list[0]
     
     for val in camelcase_list:
